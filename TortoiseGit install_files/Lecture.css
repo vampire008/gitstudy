@@ -1,0 +1,353 @@
+@charset "euc-jp";
+
+
+/* Start ==== VikiWiki Theme Description
+Name: common
+Author: mopia
+Time: 2003-07-25 09:11:26
+Comment: 共通設定
+Sample: 
+
+End ==== VikiWiki Theme Description */
+@import url("../common/common.css");
+
+/* Start ==== VikiWiki Theme Description
+Name: error
+Author: mopia
+Time: 2003-05-31 10:35:14
+Comment: エラーメッセージのスタイル
+Sample: 
+<<<error
+エラーメッセージのテストです。
+>>>
+End ==== VikiWiki Theme Description */
+div.error {
+  color: #ff0000;
+  border: ridge 8px #ff7093;
+  background-color: #ffc0c0;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+  padding: 0px 16px 0px 0px;
+  background-image: url("../common/kobito.gif");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+div.error p {
+  padding: 0px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: footer
+Author: mopia
+Time: 2003-05-31 10:12:44
+Comment: フッタの表示スタイル
+Sample: 
+
+End ==== VikiWiki Theme Description */
+div.footer {
+  text-align: right;
+}
+div.footer address {
+  padding-right: 1em;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: alink
+Author: mopia
+Time: 2003-09-19 12:54:45
+Comment: リンクのスタイル
+Sample: 
+このページへのリンク SelfPage
+End ==== VikiWiki Theme Description */
+a:link {
+  color: #0000ff;
+}
+a:visited {
+  color: #804080;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: headers
+Author: mopia
+Time: 2003-05-29 22:31:35
+Comment: h1?h3のヘッダ定義
+Sample: 
+<h1>はタイトルで確認。
+!<h2>の見出し
+!!<h3>の見出し
+!!!<h4>の見出し
+!!!!<h5>の見出し
+!!!!!<h6>の見出し
+End ==== VikiWiki Theme Description */
+div.title {
+}
+
+h1 {
+  line-height: 1em;
+  color: #000000;
+  text-align: center;
+}
+
+h2{
+  text-align: left;
+  color: #FFFFA4;
+  background-color: #005920;
+  border-bottom: outset 2px #00C800;
+  padding: 3px;
+}
+
+h3{
+  text-align: left;
+  border-bottom: outset 4px #00C800;
+  padding: 3px;
+}
+
+h4, h5, h6 {
+  text-align: left;
+  border-bottom: outset 2px #00C800;
+  padding: 3px;
+}
+
+
+/* Start ==== VikiWiki Theme Description
+Name: chip
+Author: mopia
+Time: 2003-06-05 20:58:43
+Comment: チップコメント用
+Sample: 
+<<<chip
+チップコメントです。
+>>>
+End ==== VikiWiki Theme Description */
+div.chip {
+  background-color: #c0c0ff;
+  font-size: smaller;
+  border-left: dash 3px #0000c0;
+  margin-left: 3em;
+  padding: 3px;
+}
+div.chip * {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: comment
+Author: mopia
+Time: 2003-07-29 12:32:00
+Comment: 来訪者からのコメント
+Sample: 
+<<<comment
+来訪者からのコメントです。
+ツッコミ？
+>>>
+End ==== VikiWiki Theme Description */
+div.comment {
+  font-size: 80%;
+  border: double 3px #0000c0;
+  background-color: #c0ffe0;
+  color: #005080;
+  margin: 1em;
+  padding: 0em 1em 0em 1em;
+}
+div.comment * {
+  font-size: 100%;
+  margin: 0px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: blockquote
+Author: mopia
+Time: 2003-06-11 09:47:28
+Comment: blockquoteのスタイル
+Sample: 
+> 引用はこんな感じ？
+> 引用は引用として使用するべき。
+End ==== VikiWiki Theme Description */
+blockquote {
+  color: #808040;
+  border-left: solid 1em #00bb00;
+  margin-left: 1em;
+}
+blockquote p {
+  padding: 3px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: list
+Author: mopia
+Time: 2003-06-12 21:31:11
+Comment: リストのスタイル
+Sample: 
+* リスト
+  パラグラフ
+* リスト
+End ==== VikiWiki Theme Description */
+li p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 150%;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: small
+Author: mopia
+Time: 2003-07-04 12:17:01
+Comment: 文字を小さくする
+Sample: 
+<<<small
+フォントサイズ60%なり！
+> 引用のところも同じ。
+>>>
+End ==== VikiWiki Theme Description */
+div.small {
+  font-size: 60%;
+}
+div.small * {
+  font-size: 100%;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: caution
+Author: mopia
+Time: 2003-07-02 12:49:49
+Comment: 注意事項
+Sample: 
+<<<caution
+この部分は注意せよ！
+>>>
+End ==== VikiWiki Theme Description */
+div.caution {
+  color: red;
+  font-weight: bolder;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: toolber
+Author: mopia
+Time: 2003-09-09 12:48:54
+Comment: ツールバーの書式
+Sample: 
+
+End ==== VikiWiki Theme Description */
+div.toolbar {
+}
+div.toolbar a:link,
+div.toolbar a:visited
+{
+  text-decoration:none;
+}
+div.toolbar a:link img,
+div.toolbar a:visited img
+{
+  border:none 0px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: menu
+Author: mopia
+Time: 2003-09-09 12:48:54
+Comment: メニューバーの書式
+Sample: 
+
+End ==== VikiWiki Theme Description */
+div.adminmenu {
+  font-size: smaller;
+  text-align: right;
+}
+div.adminmenu a:link,
+div.adminmenu a:visited,
+{
+  text-decoration:none;
+  border:none 0px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: sidebar
+Author: mopia
+Time: 2003-09-19 12:58:03
+Comment: tDiary互換のサイドバーのスタイル
+Sample: 
+
+End ==== VikiWiki Theme Description */
+div.sidebar {
+  position: absolute; !important;
+  top: 0px; !important;
+  left: 0px; !important;
+  width: 200px; !important;
+  max-width: 200px; !important;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+div.inner {
+  margin: 5px 5px 5px 5px;
+  padding: 0.5em;
+  color: #000000;
+  vertical-align: top;
+  border: double 3px #0000bb;
+  background-color: #BBFFCC;
+}
+div.inner dl dt
+{
+  font-size: 80%;
+  font-weight: bolder;
+}
+div.inner dl dd
+{
+  padding-left: 1em ;
+  font-size: 70%;
+}
+div.inner h2,
+div.inner h3,
+div.inner h4
+{
+  color: #000000;
+  border: outset 3px #0000bb;
+  font-size: 80%;
+}
+div.inner a:link {
+  color: #00ffff;
+}
+div.inner a:visited {
+  color: #00c0f0;
+}
+div.main div.body, div.main div.error {
+  margin-left: 200px;
+}
+
+/* Start ==== VikiWiki Theme Description
+Name: body
+Author: Yuichi Goto
+Time: 2005-04-08
+Comment: 背景などを変えるためのもの
+Sample: 
+
+End ==== VikiWiki Theme Description */
+
+
+body {
+  background-color: #BBFFCC;
+}
+
+ul, ol, dl{
+  line-height: 150%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+pre {
+ padding: 6px;
+ border: dotted 3px #000099;
+}
+
+div {
+  line-height: 150%;
+}
+
+li, dd, dt{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 130%;
+}

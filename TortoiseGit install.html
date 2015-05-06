@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0071)http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="index" href="http://www.aise.ics.saitama-u.ac.jp/~gotoh">
+<meta name="generator" content="VikiWiki1.9.8">
+
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="Author" content="Yuichi Goto">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="javascript">
+<link rel="stylesheet" type="text/css" href="./TortoiseGit install_files/sidebar-left.css">
+<link rel="stylesheet" type="text/css" href="./TortoiseGit install_files/Lecture.css">
+
+<title>TortoiseGitのインストール方法</title>
+
+</head>
+
+<body>
+<div class="main">
+
+<div class="static">
+<div class="title">
+<h1>TortoiseGitのインストール方法</h1></div>
+<div class="section">
+
+
+ <ul>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc1">はじめに</a></li>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc2">Windows Installerの更新（Windows XP SP3の場合）</a></li>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc3">Windows用Git msygitのインストール</a></li>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc4">TortoiseGitのインストール</a>
+  <ul>
+  <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc5">インストール</a></li>
+  <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc6">日本語表示の有効化＆動作確認</a></li>
+  </ul>
+ </li>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc7">TortoiseGitの使い方</a></li>
+ <li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToInstallTortoiseGit.html#toc8">戻る</a></li>
+ </ul>
+
+<h2> はじめに<a id="toc1" name="toc1">_</a></h2>
+<p>Windows OS上でGUIでGitを使うことができるソフトウェア<a href="http://code.google.com/p/tortoisegit/">TortoiseGit</a>のインストールメモ。</p>
+
+<h2> Windows Installerの更新（Windows XP SP3の場合）<a id="toc2" name="toc2">_</a></h2>
+<p>TortoiseGitのインストールには、Windows Installer 4.5が使用される。しかし、Windows XP SP3のWindows Installerのバージョンは4.5未満である。このため、事前に更新しなければいけない。</p>
+<ul>
+<li> <a href="http://www.microsoft.com/ja-jp/download/details.aspx?id=8483">Microsoft: Windows Installer</a></li>
+</ul>
+<p>インストーラーの指示に従い更新する。なお、OSの再起動が必要。</p>
+
+<h2> Windows用Git msygitのインストール<a id="toc3" name="toc3">_</a></h2>
+<p><a href="http://code.google.com/p/msysgit/">msygit</a>本家で公開されているバイナリパッケージをダウンロードする。<a href="http://code.google.com/p/msysgit/downloads/list?can=2&q=%22Full+installer+for+official+Git+for+Windows%22">こちらの"Full installer for official Git for Windows"</a>で検索した結果で表示されるファイルをダウンロードする。</p>
+<p>2013年4月18日現在、私は、 Git-1.8.1.2-preview20130201.exe をダウンロードした。</p>
+<p>インストールの参考サイト</p>
+<ul>
+<li> <a href="http://www.karakaram.com/windows-tortoisegit#install-msysgit">karakaram-blog：TortoiseGitのインストールと設定 Windowsのターミナルが嫌いな人に：msysGitをインストール</a></li>
+<li> <a href="http://ngyuki.hatenablog.com/entry/2013/01/01/222816">ngの日記：Windows で Git の環境設定 (msysgit, TortoiseGit)</a></li>
+</ul>
+<p>ダウンロードしたファイルをダブルクリックし、インストールが開始されると以下の画面が表示される。</p>
+<img src="./TortoiseGit install_files/msysgit01.png">
+<p>「next」をクリックし、次へ。</p>
+<img src="./TortoiseGit install_files/msysgit02.png">
+<p>ライセンスに納得できるならば次へ。そうでないならインストールをやめる。</p>
+<img src="./TortoiseGit install_files/msysgit03.png">
+<p>インストールフォルダを指定する。特にこだわりがないならば標準のフォルダへ。私はDドライブにインストールしたかったのでインストール先を変更している。</p>
+<img src="./TortoiseGit install_files/msysgit04.png">
+<p>インストールオプションを選択する。私は画面のように設定した。</p>
+<img src="./TortoiseGit install_files/msysgit05.png">
+<p>デフォルトのままにする。</p>
+<img src="./TortoiseGit install_files/msysgit06.png">
+<p>真ん中を選択する。</p>
+<img src="./TortoiseGit install_files/msysgit07.png">
+<p>SSHとGitを連携させる際のプログラムを選択する。こだわりがなければPlinkを選択する。これはインストール後にも変更できる（環境変数GIT_SSH）。</p>
+<img src="./TortoiseGit install_files/msysgit08.png">
+<p>改行コードの変更を自動で行うかどうかを選択する。Windowsの改行コードCRLF、Unixの改行コードがLFとなっている。UnixとWindowsでファイルをやりとりする場合は、真ん中の選択肢を選ぶ（チェックアウトをするときは、改行の自動変更しない。コミットをするときにはUnixの改行コードに合わせる）。</p>
+<img src="./TortoiseGit install_files/msysgit09.png">
+<p>インストールが進む。</p>
+<img src="./TortoiseGit install_files/msysgit10.png">
+<p>msysgitのインストールが終わるとこのウィンドウが提示される。</p>
+
+<h2> TortoiseGitのインストール<a id="toc4" name="toc4">_</a></h2>
+
+<h3> インストール<a id="toc5" name="toc5">_</a></h3>
+<p><a href="http://code.google.com/p/tortoisegit/wiki/Download?tm=2">TotortoiseGitプロジェクト：Download</a>のページからTortoiseGitのバイナリをダウンロードし、インストールする。インストールはすべてデフォルトのままでよい。</p>
+<p>次に同じく<a href="http://code.google.com/p/tortoisegit/wiki/Download?tm=2">TotortoiseGitプロジェクト：Download</a>のページから日本語のLanguage Packをダウンロードする。</p>
+<p>注意点は、使っているOSに合わせて、インストールするファイルを選ぶこと。32bit OSの場合は32bitのファイル。64bit OSならば64bitのファイルをダウンロードする。自分が使っているOSが32bit OS なのか 64bit OSなのか知りたい場合は、以下の方法で調べる。</p>
+<ul>
+<li> <a href="http://support.microsoft.com/kb/958406/ja">Microsoft：自分のパソコンが 32 ビット版か 64 ビット版かを確認したい</a></li>
+</ul>
+
+<h3> 日本語表示の有効化＆動作確認<a id="toc6" name="toc6">_</a></h3>
+<p>日本語表示を有効化する。まず、C:\reposというフォルダを生成し、そのフォルダに移動する。その後、マウスを右クリックすると以下のような表示になる（私は、TortoiseSVNもインストールしているため、ちょっと余計な表示もでている）</p>
+<img src="./TortoiseGit install_files/tortoisegit01.png">
+<p>右クリックで表示されるウィンドウで「TortoiseGit」→「Setting」をクリックする。すると以下のウィンドウが表示される。「Language」で日本語を選択し「OK」をクリックする。</p>
+<img src="./TortoiseGit install_files/tortoisegit02.png">
+<p>再び右クリックをすると以下のように日本語表示に切り替わっているのがわかる。</p>
+<img src="./TortoiseGit install_files/tortoisegit03.png">
+<p>続いて動作確認を行う。<a href="https://github.com/yuichigoto/wn2trrtext">GitHub: Yuichi Goto, wn2trrtext</a>からファイルをGitを用いてダウンロードしてみる。まず、C:\reposというフォルダを開き、そこで、右クリックし、「Gitクローン（複製）…」を選択する。</p>
+<img src="./TortoiseGit install_files/tortoisegit04.png">
+<p>開いたウィンドウの「URL」の部分にリポジトリのURLを入力する。今回は「git://github.com/yuichigoto/wn2trrtext.git」を入力し、「OK」をクリックする。</p>
+<img src="./TortoiseGit install_files/tortoisegit05.png">
+<p>無事wn2trrtextというフォルダが生成されているならば、msysgitおよびTortoiseGitのインストールは成功している。</p>
+
+<h2> TortoiseGitの使い方<a id="toc7" name="toc7">_</a></h2>
+<ul>
+<li> <a href="http://www.plowman.co.jp/school/Git/Git.html">Gitによるバージョン管理入門 for windows</a></li>
+<li> <a href="http://www41375u.sakura.ne.jp/server/revision/tortoisegit.html">ネットワークチェンジニアとして：Tortoise Git</a></li>
+<li> <a href="http://www.karakaram.com/windows-tortoisegit">karakaram-blog：TortoiseGitのインストールと設定 Windowsのターミナルが嫌いな人に</a></li>
+<li> <a href="http://ngyuki.hatenablog.com/entry/2013/01/01/222816">ngの日記：Windows で Git の環境設定 (msysgit, TortoiseGit)</a></li>
+</ul>
+
+<h2> 戻る<a id="toc8" name="toc8">_</a></h2>
+<ul>
+<li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToBackUpByGit.html">Gitを使った卒論生のためのバックアップ講座</a></li>
+<li> <a href="http://www.aise.ics.saitama-u.ac.jp/~gotoh/FrontPage.html">Yuichi Goto's page</a></li>
+</ul></div>
+<div class="bottombar">
+<!-- nakanohito -->
+<script language="Javascript">
+<!--
+var refer = document.referrer;
+document.write("<a href='http://nakanohito.jp/'>");
+document.write("<img src='http://nakanohito.jp/an/?u=112075&h=445214&w=128&refer="+escape(parent.document.referrer)+"&url="+escape(parent.document.URL)+"' border='0' width='128' height='128' />");
+document.write("</a>");
+//-->
+</script><a href="http://nakanohito.jp/"><img src="./TortoiseGit install_files/saved_resource" border="0" width="128" height="128"></a>
+<noscript>
+&lt;img src="http://nakanohito.jp/an/?u=112075&amp;h=445214&amp;w=128" width="128" height="128" alt="なかのひと" border="0" /&gt;
+</noscript>
+<!-- nakanohito end --></div>
+</div>
+
+</div>
+
+
+</body></html>

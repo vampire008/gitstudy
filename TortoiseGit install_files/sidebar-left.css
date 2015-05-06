@@ -1,0 +1,18 @@
+div.sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20%;
+  max-width: 20%;
+}
+div.inner {
+  overflow: hidden;
+  margin: 3px;
+  padding: 3px;
+  font-size: 70%;
+  border: solid 1px;
+}
+div.main div.body,
+div.main div.error {
+  margin-left: 20%;
+}
